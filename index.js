@@ -14,7 +14,8 @@ app.use(cors());
 app.use('/posts', postRoute);
 
 
-const CONNECTION_URL = "mongodb+srv://admin-jinho:admin-jinho123@cluster0.ebk3y.mongodb.net/memoriesDB?retryWrites=true&w=majority"
+const CONNECTION_URL =
+  "mongodb://localhost:27017/memoriesDB?retryWrites=true&w=majority";
 
 const PORT = process.env.PORT || 5001;
 
