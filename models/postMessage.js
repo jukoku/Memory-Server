@@ -16,6 +16,12 @@ const postSchema = mongoose.Schema({
     },
 });
 
+// postSchema.method("toJSON", function () {
+//   const { __v, _id, ...object } = this.toObject();
+//   object._id = _id;
+//   return object;
+// });
+
 const PostMessage = mongoose.model("PostMessage", postSchema);
 
 export default PostMessage;
